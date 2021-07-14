@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sign Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200&display=swap" rel="global.css">
+        <link rel="stylesheet" href="global.css">
+    </head>
+    <body>
+        <div class="box">
+          <div class="form-holder">
+            <form action="" method="POST">
+              <div class="input-wrapper">
+                <label for="username">Choose User Name</label>
+                <input type="text" name="username" class="inp">
+              </div>
+              <div class="input-wrapper">
+                <label for="password">Choose Your Password</label>
+                <input type="password" name="password" class="inp">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" class="inp">
+              </div>
+              <div class="input-wrapper">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" class="inp">
+              </div>
+              <div class="input-wrapper">
+                <label for="birthDate">Birth Date</label>
+                <input type="date" name="birthDate" class="inp">
+              </div>
+              <div class="input-wrapper">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" class="inp">
+              </div>
+              <div class="input-wrapper">
+                <label for="userType">Are You?</label>
+                <div class="input-selection">
+                <select name="userType" class="slc">
+                  <option value="mentor">Mentor</option>
+                  <option value="mentee">Mentee</option>
+                </select>
+              </div>
+              </div>
+                <div class="input-wrapper">
+                  <label for="subject">Subject</label>
+
+                    <div class="input-selection">
+
+                      <select name="subject" class="slc">
+                          <option value="techO">Technical Operations</option>
+                          <option value="busA">Business Analyst</option>
+                          <option value="softTA">Software Test Analyst</option>
+                          <option value="softD">Software Development </option>
+                          <option value="robPA">Robotics Process Automation </option>
+                      </select>
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                  <label for="location">Location</label>
+                  <div class="input-selection">
+                  <select name="location" class="slc">
+                      <option value="newY">New York, US</option>
+                      <option value="tor">Toronto, CA</option>
+                      <option value="lon">London, UK</option>
+                      <option value="lds">Leeds, UK</option>
+                      <option value="glw">Glasgow, UK</option>
+                      <option value="brtn">Brighton, UK</option>
+                      <option value="frnk">Frankfurt, Germany</option>
+                      <option value="sdy">Sidney, Australia</option>
+                      <option value="mbn">Melbourne, Australia</option>
+                      <option value="hnk">Hong Kong, China</option>
+                  </select>
+                </div>
+                </div>
+                <div class="input-wrapper">
+
+                  <input type="submit" value="Register" class="button" class="inp"><br />
+
+                </div>
+                <div class="input-wrapper">
+                  <a href={{ url_for('login') }}>Already member? Login Here</a><br />
+                </div>
+            </form>
+          </div>
+        </div>
+    </body>
+</html>
