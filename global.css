@@ -1,0 +1,103 @@
+/*body styling*/
+body{
+  height: auto;
+  background: linear-gradient(135deg, #9423e1, #81d8d0);
+  padding: 15px;
+  align-items: center;
+
+  display: flex;
+
+  justify-content: center;
+
+}
+/*remove all default browser styling*/
+a {
+  color: #706d6d;
+  text-decoration: none; 
+}
+/*font family*/
+label, option, select, .inp{font-family: 'Roboto Mono', monospace;}
+.box{
+
+    max-width: 510px;
+    margin: 21px auto;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+
+    background: white;
+
+
+    padding: 30px;
+    width: 100%;
+
+}
+/*form to take full width*/
+.box .form-holder{
+  width: 100%;
+}
+/*divs holding the inputs*/
+.box .form-holder .input-wrapper{
+
+  display: flex;
+  margin-bottom: 20px;
+  align: center;
+}
+/*styling all the labels*/
+.box .form-holder .input-wrapper label{
+   width: 210px;
+   color: #706d6d;
+   margin-right: 8px;
+  font-size: 16px;
+}
+
+
+
+/*style the input and select boxes*/
+.box .form-holder .input-wrapper .input-selection .slc,
+.box .form-holder .input-wrapper  .inp{
+
+
+
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  border: 1px solid #a4dbc9;
+  border-radius: 5px;
+  appearance:none;
+}
+
+
+
+/*on click change the border colour*/
+.box .form-holder .input-wrapper .inp:focus{
+
+  border: 1px solid #00bd7f;
+}
+/*style the button*/
+.box  .input-wrapper .button{
+  width: 100%;
+   padding: 10px 10px;
+  background: linear-gradient(135deg, #59f0ae, #6ecbd4);
+  color: #faf7f7;
+  cursor: pointer;
+  border: 0px;
+  font-size: 18px;
+  border-radius: 5px;
+
+}
+
+
+
+
+
+@media (max-width:420px) {
+  .box .form-holder .input-wrapper{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .box .form-holder .input-wrapper label{
+    margin-bottom: 10px;
+  }
+
+}
